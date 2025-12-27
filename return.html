@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Return • Library</title>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="main">
+      <div class="topbar" id="topbar"></div>
+
+      <div class="panel">
+        <h2>↩️ Return a Borrowed Book</h2>
+        <p>Return a book to make it available again.</p>
+      </div>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Book</th><th>Author</th><th>Borrow Date</th><th>Due Date</th><th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="tbody">
+            <tr><td colspan="5" style="text-align:center;color:var(--muted);">No borrowed books to return</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+
+  <script type="module" src="assets/js/return.js"></script>
+</body>
+</html>

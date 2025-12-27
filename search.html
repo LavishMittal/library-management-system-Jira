@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Search • Library</title>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="main">
+      <div class="topbar" id="topbar"></div>
+
+      <div class="panel">
+        <h2>🔍 Search & Filter Books</h2>
+        <div class="search-filter">
+          <input id="q" placeholder="Search by title or author..."/>
+          <select id="cat">
+            <option value="">All Categories</option>
+            <option>Fiction</option><option>Science</option><option>History</option>
+            <option>Technology</option><option>Self-Help</option>
+          </select>
+          <select id="st">
+            <option value="">All Status</option>
+            <option>Available</option>
+            <option>Borrowed</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="grid" class="books-grid"></div>
+    </main>
+  </div>
+
+  <script type="module" src="assets/js/search.js"></script>
+</body>
+</html>
