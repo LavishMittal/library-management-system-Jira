@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard • Library</title>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="main">
+      <div class="topbar" id="topbar"></div>
+
+      <div class="panel">
+        <h2>📊 Dashboard Overview</h2>
+        <p>Live stats based on your borrowing and wishlist.</p>
+      </div>
+
+      <div class="dashboard-grid">
+        <div class="stat-card"><div class="stat-row"><div><div class="stat-value" id="total">0</div><div class="stat-label">Total books</div></div><div class="stat-icon">📚</div></div></div>
+        <div class="stat-card"><div class="stat-row"><div><div class="stat-value" id="available">0</div><div class="stat-label">Available</div></div><div class="stat-icon">✅</div></div></div>
+        <div class="stat-card"><div class="stat-row"><div><div class="stat-value" id="borrowed">0</div><div class="stat-label">Borrowed</div></div><div class="stat-icon">🕒</div></div></div>
+        <div class="stat-card"><div class="stat-row"><div><div class="stat-value" id="wish">0</div><div class="stat-label">Wishlist</div></div><div class="stat-icon">⭐</div></div></div>
+      </div>
+    </main>
+  </div>
+
+  <script type="module" src="assets/js/dashboard.js"></script>
+</body>
+</html>
